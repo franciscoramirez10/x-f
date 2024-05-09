@@ -54,6 +54,28 @@
         </div>
     </nav> 
     <!-- Navbar End -->
+    <audio id="bgMusic" autoplay loop>
+        <source src="img/Winter (L'Inverno) Op.8 No.4 F Minor_ Allegro Non Molto.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <!-- Botón de Play/Pause -->
+    <button onclick="togglePlay()" id="playPauseBtn" style="position: fixed; bottom: 20px; right: 20px; z-index: 100;">Pause</button>
+    
+    <script>
+        var music = document.getElementById("bgMusic");
+        var playPauseBtn = document.getElementById("playPauseBtn");
+        
+        function togglePlay() {
+            if (music.paused) {
+                music.play();
+                playPauseBtn.textContent = 'Pause';
+            } else {
+                music.pause();
+                playPauseBtn.textContent = 'Play';
+            }
+        }
+    </script>
 
 
     <!-- Carousel Start -->
@@ -69,7 +91,7 @@
                                 <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
                             </div>
                             <div class="mt-3">
-                                <h3 class="text-white font-secondary">08/06/2024</h3>
+                                <h3 class="text-white font-secondary">08/ 06/ 2024</h3>
                             </div>
                             
                         </div>
@@ -249,8 +271,11 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-md-6 text-center">
-                        <h5 class="font-weight-normal text-muted mb-3 pb-3">Jorge Szwako Demianiuk
-                            Nadia Orinko Francisco Ramirez Arrechea Isabel Britos Meireles</h5>
+                        <h5 class="font-weight-normal text-muted mb-3 pb-3">
+                            Nadia Orinko <br/>
+                            Jorge Szwako Demianiuk<br/><br/>
+                            Isabel Britos Meireles<br/>
+                            Francisco Ramirez Arrechea</h5>
                     </div>
                 </div>
             </div>
@@ -267,13 +292,13 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6 text-center">
-                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Este día significará el inicio de un nuevo capítulo en nuestras vidas y nos encantaría que estuvieras allí para compartir y ser testigo de cada sonrisa y cada promesa. Únete a nosotros para celebrar el amor y la felicidad que nos ha llevado a este hermoso día</h5>
+                    <h5 class="font-weight-normal text-muted mb-3 pb-3">Este día significará el inicio de un nuevo capítulo en nuestras vidas y nos encantaría que estuvieras allí para compartir y ser testigo de cada sonrisa y cada promesa. <br/><br/>Únete a nosotros para celebrar el amor y la felicidad que nos ha llevado a este hermoso día</h5>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 border-right border-primary">
                     <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-                        <img class="img-fluid mb-4" src="img/event-1.jpg" alt="">
+                        <img class="img-fluid mb-4" src="img/iglesiarusa.png" alt="" style="height: 310px;">
                         <h4 class="mb-3">Evento Religioso</h4>
                         <p class="mb-2">Iglesia Ortodoxa Rusa</p>
                         <p class="mb-0">Nuestra Señora de la Asunción c/ Ygatymi</p>
@@ -282,7 +307,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="text-center text-md-left ml-md-3">
-                        <img class="img-fluid mb-4" src="img/event-2.jpg" alt="">
+                        <img class="img-fluid mb-4" src="img/lamisionhotel.png" alt="">
                         <h4 class="mb-3">Evento Civil</h4>
                         <p class="mb-2">Hotel La Mision</p>
                         <p class="mb-0">Dr. Juan Eulogio Estigarribia 4990</p>
@@ -419,7 +444,7 @@
                     <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
                         <!-- <img class="img-fluid mb-4" src="img/event-1.jpg" alt=""> -->
                         <h4 class="mb-3">Firmas</h4>
-                        <p class="mb-2">Nueva Americana</p>
+                        <p class="mb-0">Nueva Americana</p>
                         <p class="mb-0">Tupi</p>
                         <p class="mb-0">Olier</p>
                     </div>
@@ -428,10 +453,10 @@
                     <div class="text-center text-md-left ml-md-3">
                         <!-- <img class="img-fluid mb-4" src="img/event-2.jpg" alt=""> -->
                         <h4 class="mb-3">Cuenta Bancaria</h4>
-                        <p class="mb-2">Francisco Ramirez</p>
-                        <p class="mb-0">4632716</p>
-                        <p class="mb-0">Cuenta Dólares: 53 001 368 7402 </p>
-                        <p class="mb-0">Cuenta Guaraníes: 53 007 217 6204</p>
+                        <p class="mb-2">Banco Sudameris</p>
+                        <p class="mb-0">Xenia Szwako</p>
+                        <p class="mb-0">CI: 4393739</p>
+                        <p class="mb-0">Cta: 53 007 217 6204</p>
                     </div>
                 </div>
             </div>
@@ -482,7 +507,7 @@
     <!-- About End -->
 
     <!-- RSVP Start -->
-    <div class="container-fluid py-5" id="rsvp">
+    <!-- <div class="container-fluid py-5" id="rsvp">
         <div class="container py-5">
             <div class="section-title position-relative text-center">
                 <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
@@ -530,7 +555,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- RSVP End -->
 
 

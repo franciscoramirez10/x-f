@@ -9578,6 +9578,18 @@ a.text-dark:hover, a.text-dark:focus {
   background: #FFFFFF;
 }
 
+.clickable {
+  cursor: pointer;
+  color: #dbb897;
+  padding: 8px 16px; /* Agrega relleno para que el botón sea más grande */
+  border: 2px solid #dbb897; /* Agrega un borde con el mismo color que el texto */
+  display: inline-block; /* Hace que el elemento se comporte como un botón */
+  background-color: transparent; /* Mantiene el fondo transparente o puedes poner otro color */
+  transition: all 0.3s ease;
+}
+
+
+
 .btn-play:before {
   content: "";
   position: absolute;

@@ -27,6 +27,16 @@
         }
     });
 
+    document.querySelector('.clickable').addEventListener('click', function() {
+        var details = document.getElementById('bank-details');
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+        } else {
+            details.style.display = 'none';
+        }
+    });
+    
+
 
     // Modal Video
     $(document).ready(function () {
